@@ -1,12 +1,19 @@
 
 
-import org.junit.Test;
-
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 
+import org.junit.Before;
+import org.junit.Test;
+
 public class TestShields {
+	Shields shields;
+	
+	@Before
+	public void init(){
+		shields = new Shields();
+	}
 	
 	@Test
 	public void shieldsAreNotRaisedByDefault() {
@@ -69,5 +76,10 @@ public class TestShields {
 		assertEquals(s.getShieldEnergyLevel(), Shields.MIN_SHIELD_LEVEL);
 	}
 	
-	
+	@Test
+	public void shieldBuckleWhenEnergyAtZero() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		shields.hit(curEnergy);	
+		assertFalse(shields.isRaised());
+	}
 }

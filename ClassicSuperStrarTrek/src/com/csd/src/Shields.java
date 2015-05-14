@@ -41,4 +41,8 @@ public class Shields {
 			return;
 		}
 	}
+	
+	public void hit(int hitEnergy) {
+		changeShieldEnergyLevelBy(hitEnergy);
+	}
 }
