@@ -16,20 +16,10 @@ public class TestShields {
 	}
 	
 	@Test
-	public void shieldsAreNotRaisedOutset() {
-		assertFalse(shields.isRaised());
+	public void toggleChangedShields() {
+		boolean currentShields = shields.isRaised();
+		shields.toggleShields();
+		assertNotEquals(currentShields, shields.isRaised());
 	}
 	
-	@Test
-	public void toggleLoweredShieldsRaisesShields() {
-		shields.toggleShields();
-		assertTrue(shields.isRaised());
-	}
-	
-	@Test
-	public void toggleRaisedShieldsLowersShields() {
-		shields.toggleShields();
-		shields.toggleShields();
-		assertFalse(shields.isRaised());
-	}
 }
