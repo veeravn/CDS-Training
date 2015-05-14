@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c539dae-e79f-44a5-8bd5-cf803ffba416" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClassicSuperStrarTrek.iml" afterPath="$PROJECT_DIR$/ClassicSuperStrarTrek.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/src/Shields.java" afterPath="$PROJECT_DIR$/src/com/csd/src/Shields.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/tests/TestRest.java" afterPath="$PROJECT_DIR$/src/com/csd/tests/TestRest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" afterPath="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ClassicSuperStrarTrek.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431621792456" ignored="false" />
-    <file path="$PROJECT_DIR$/../../StarTrek/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431621824569" ignored="false" />
-    <file path="$PROJECT_DIR$/../../CSD/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431621824569" ignored="false" />
+    <file path="/Dummy.txt" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431622422710" ignored="false" />
+    <file path="$PROJECT_DIR$/../../StarTrek/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431622469967" ignored="false" />
+    <file path="$PROJECT_DIR$/../../CSD/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431622469967" ignored="false" />
     <file path="/TestSubsystemStatus.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431620522543" ignored="false" />
     <file path="/SubSystem.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431619752875" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestShields.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestShields.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+            <state line="33" column="16" selection-start="727" selection-end="727" vertical-scroll-proportion="0.7135135">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +113,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubSystem.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SubSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -271,10 +274,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
         <option value="$PROJECT_DIR$/src/com/csd/src/Shields.java" />
         <option value="$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java" />
         <option value="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestRest.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
       </list>
     </option>
   </component>
@@ -598,7 +602,11 @@
       <created>1431618763921</created>
       <updated>1431618763921</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="stubbing in SubSystem">
+      <created>1431621833078</created>
+      <updated>1431621833078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,15 +625,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973032" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973032" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -675,7 +683,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="stubbing in SubSystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing package names" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -691,6 +699,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="adding ide files" />
     <MESSAGE value="stubbing in SubSystem" />
+    <MESSAGE value="removing package names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -714,19 +723,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Shields.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Shields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,10 +746,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="727" selection-end="727" vertical-scroll-proportion="0.7135135">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
