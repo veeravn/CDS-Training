@@ -1,4 +1,3 @@
-package com.csd.src;
 
 public class Shields {
 	
