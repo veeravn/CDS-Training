@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+sourceSets {
+	main {
+    	java {
+            srcDir 'src/com/csd/src'
+		}
+	}
+	test {
+		java {
+        	srcDir 'src/com/csd/tests'
+    	}
+	}
+}
+
+compileJava {
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
+}
+compileTestJava {
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
+}
+dependencies {
+	 testCompile "junit:junit:4.11"
+}
+repositories {
+    mavenCentral()
+}
+
+
