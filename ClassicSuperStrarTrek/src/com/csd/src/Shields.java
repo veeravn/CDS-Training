@@ -58,10 +58,11 @@ public class Shields {
 			energyNotAbsorbed = hitEnergy;
 		} else {
 			if(shieldEnergyLevel <= hitEnergy) {
-				energyNotAbsorbed = hitEnergy - shieldEnergyLevel;
 				dropShields();
 			}
-			changeShieldEnergyLevelBy(-hitEnergy);
+			energyNotAbsorbed = changeShieldEnergyLevelBy(-hitEnergy);
+			// Since callers only deal in positive energy amounts, this needs to be negated prior to returning
+			energyNotAbsorbed = -energyNotAbsorbed;
 		}
 		return energyNotAbsorbed;
 	}
