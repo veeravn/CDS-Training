@@ -84,7 +84,7 @@ public class TestShields {
 	@Test
 	public void shieldBuckleWhenEnergyAtZero() {
 		int curEnergy = shields.getShieldEnergyLevel();
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		shields.hit(curEnergy);	
 		assertFalse(shields.isRaised());
 	}
@@ -148,7 +148,7 @@ public class TestShields {
 	}
 	@Test
 	public void shieldsDroppedWhenEnergyReducedToMin() {
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		int curEnergy = shields.getShieldEnergyLevel();
 		int transEnergy = curEnergy;
 		shields.transferEnergy(-transEnergy);
