@@ -25,7 +25,7 @@ public class TestSubsystemStatus {
 
     @Test
     public void checkApplyDamage() {
-        subsystem.applyDamage(50);
+        subsystem.applyDamage(500);
         assertTrue(subsystem.isDamaged());
     }
 
@@ -36,11 +36,11 @@ public class TestSubsystemStatus {
 
     @Test
     public void checkTypeList() {
-        assertTrue(subsystem.one_tenth_stardateDamage.size() > 0);
+        assertTrue(subsystem.stardateDamage.size() > 0);
     }
 
     @Test
     public void checkDamageCalculation() {
-        assertEquals(.1, subsystem.damageCalculation(59));
+        assertEquals(0, subsystem.damageCalculation(59));
     }
 }
