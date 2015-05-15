@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c539dae-e79f-44a5-8bd5-cf803ffba416" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" afterPath="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java" afterPath="$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" afterPath="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ClassicSuperStrarTrek.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431706586636" ignored="false" />
+    <file path="/Dummy.txt" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431716524340" ignored="false" />
     <file path="$PROJECT_DIR$/../../StarTrek/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431644767627" ignored="false" />
     <file path="$PROJECT_DIR$/../../CSD/.idea/workspace.xml" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431644777023" ignored="false" />
     <file path="/TestSubsystemStatus.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431699900049" ignored="false" />
-    <file path="/SubSystem.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431708343464" ignored="false" />
-    <file path="/fragment.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431699801107" ignored="false" />
+    <file path="/SubSystem.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431716466477" ignored="false" />
+    <file path="/fragment.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431715203717" ignored="false" />
+    <file path="/Ship.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431710163272" ignored="false" />
+    <file path="/SubSystemType.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431709914520" ignored="false" />
+    <file path="/TestShip.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431710287384" ignored="false" />
+    <file path="/Shields.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431715910444" ignored="false" />
+    <file path="/TestDamageIndicator.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431715264746" ignored="false" />
+    <file path="/TestDamageAllocator.java" changelist="6c539dae-e79f-44a5-8bd5-cf803ffba416" time="1431716053805" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,25 +91,43 @@
       <file leaf-file-name="Shields.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/src/Shields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="21" column="23" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestShields.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DamageAllocator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/csd/src/DamageAllocator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="38" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestShields.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="16" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
+            <state line="150" column="44" selection-start="4645" selection-end="4645" vertical-scroll-proportion="3.340909">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSubsystemStatus.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestShip.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="4" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSubsystemStatus.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="22" selection-start="931" selection-end="931" vertical-scroll-proportion="0.86527514">
+            <state line="12" column="0" selection-start="239" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +136,7 @@
       <file leaf-file-name="Ship.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/src/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+            <state line="48" column="14" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +145,7 @@
       <file leaf-file-name="TestDamageAllocator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestDamageAllocator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="44" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+            <state line="21" column="8" selection-start="624" selection-end="679" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +154,16 @@
       <file leaf-file-name="SubSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+            <state line="30" column="8" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubSystemType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystemType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="5" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +181,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="78" selection-start="3290" selection-end="3290" vertical-scroll-proportion="0.0">
+            <state line="53" column="78" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,14 +334,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/csd/tests/TestRest.java" />
-        <option value="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
-        <option value="$PROJECT_DIR$/src/com/csd/src/Shields.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/csd/src/Ship.java" />
-        <option value="$PROJECT_DIR$/src/com/csd/tests/TestDamageAllocator.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/src/SubSystemType.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/src/Ship.java" />
         <option value="$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestShip.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestDamageIndicator.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/src/Shields.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestDamageAllocator.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/src/SubSystem.java" />
+        <option value="$PROJECT_DIR$/src/com/csd/tests/TestShields.java" />
       </list>
     </option>
   </component>
@@ -347,6 +381,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -391,6 +426,36 @@
               <option name="myItemId" value="csd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClassicSuperStrarTrek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClassicSuperStrarTrek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -408,7 +473,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,6 +494,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.All in ClassicSuperStrarTrek">
     <configuration default="false" name="All in ClassicSuperStrarTrek" type="JUnit" factoryName="JUnit" temporary="true">
@@ -720,7 +789,15 @@
       <created>1431706589538</created>
       <updated>1431706589538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reverted gradle file">
+      <created>1431708607021</created>
+      <updated>1431708607021</updated>
+    </task>
+    <task id="LOCAL-00007" summary="check for damaged shield">
+      <created>1431716244405</created>
+      <updated>1431716244405</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,16 +806,16 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21086606" sideWeight="0.66975665" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21086606" sideWeight="0.6709154" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976826" sideWeight="0.49973103" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33024335" sideWeight="0.4260355" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908458" sideWeight="0.4260355" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908458" sideWeight="0.49973103" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283237" sideWeight="0.49973103" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908458" sideWeight="0.49973103" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -746,12 +823,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24905863" sideWeight="0.66975665" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33024335" sideWeight="0.5739645" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24905863" sideWeight="0.6709154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908458" sideWeight="0.5739645" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908458" sideWeight="0.49973103" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -797,7 +874,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified the subsystem arraylist initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="check for damaged shield" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -815,6 +892,8 @@
     <MESSAGE value="stubbing in SubSystem" />
     <MESSAGE value="removing package names" />
     <MESSAGE value="modified the subsystem arraylist initialization" />
+    <MESSAGE value="reverted gradle file" />
+    <MESSAGE value="check for damaged shield" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -824,30 +903,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+        <state line="54" column="78" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -873,37 +931,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="16" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="78" selection-start="3290" selection-end="3290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Shields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestDamageAllocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+        <state line="53" column="78" selection-start="3630" selection-end="3630" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -915,6 +945,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/DamageAllocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="239" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="14" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/Shields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="4" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestDamageAllocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="624" selection-end="679" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="29" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
@@ -922,16 +994,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystemType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+        <state line="2" column="5" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestSubsystemStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/com/csd/src/SubSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="22" selection-start="931" selection-end="931" vertical-scroll-proportion="0.86527514">
+        <state line="30" column="8" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/csd/tests/TestShields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="44" selection-start="4645" selection-end="4645" vertical-scroll-proportion="3.340909">
           <folding />
         </state>
       </provider>

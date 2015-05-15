@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.*;
+import static junit.framework.Assert.assertTrue;
 
 
 public class TestShip {
