@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -46,6 +47,6 @@ public class TestDamageAllocator {
 			}
 		}
 		
-		assertTrue(countOfDamagedSubsystems == 1);	
+		assertEquals(1, countOfDamagedSubsystems);	
 	}
 }

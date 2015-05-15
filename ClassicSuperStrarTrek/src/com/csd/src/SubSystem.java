@@ -28,8 +28,8 @@ public class SubSystem {
             return false;
     }
 
-    public void applyDamage(int damage) {
-        star_dates_to_repair = star_dates_to_repair + damageCalculation(damage);
+    public void applyDamage(int energyDamage) {
+        star_dates_to_repair = star_dates_to_repair + damageCalculation(energyDamage);
     }
 
     public subsystem_type getType() {

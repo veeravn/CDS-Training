@@ -11,18 +11,19 @@ public class DamageAllocator {
 
 		SubSystem subSystem = chooseRandomSubsystem(subsystems);
 		
-		damageRandomSubsystem(subSystem, hitEnergy);	
+		subSystem.applyDamage(hitEnergy);	
 	}
 	
 	private SubSystem chooseRandomSubsystem(ArrayList<SubSystem> subsystems) {
 		Random rand = new Random();
+		return chooseRandomSubsystemPart2(subsystems, rand);
+	}
+
+	private SubSystem chooseRandomSubsystemPart2(
+			ArrayList<SubSystem> subsystems, Random rand) {
 		int randIndex = rand.nextInt(subsystems.size());
 		SubSystem subsystem = subsystems.get(randIndex);
 		return subsystem;
-	}
-	
-	private void damageRandomSubsystem(SubSystem subsystem, int energy) {
-		subsystem.applyDamage(energy);
 	}
 	
 }
