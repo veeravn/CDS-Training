@@ -29,6 +29,7 @@ public class Shields {
 	
 	// positive values increase shield levels, negative values reduce them
 	public void changeShieldEnergyLevelBy(int energyUnitDelta) {
+		
 		shieldEnergyLevel = shieldEnergyLevel + energyUnitDelta;
 		
 		if (shieldEnergyLevel < MIN_SHIELD_LEVEL) {
@@ -41,8 +42,21 @@ public class Shields {
 			return;
 		}
 	}
-	
-	public void hit(int hitEnergy) {
-		changeShieldEnergyLevelBy(hitEnergy);
+	/**
+	 * Calculate the amount of energy that is absorbed and the amount left over.
+	 * @param hitEnergy the amount of energy hit
+	 * @return the amount of energy not absorbed.
+	 */
+	public int hit(int hitEnergy) {
+		int energyNotAbsorbed = 0;
+		if(isRaised() == false) {
+			energyNotAbsorbed = hitEnergy;
+		} else {
+			if(shieldEnergyLevel < hitEnergy) {
+				energyNotAbsorbed = hitEnergy - shieldEnergyLevel;
+			}
+			changeShieldEnergyLevelBy(-hitEnergy);
+		}
+		return energyNotAbsorbed;
 	}
 }
