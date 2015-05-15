@@ -15,15 +15,29 @@ public class TestShip {
 		ship = new Ship();
 	}
 
+	
+	@Test
+	public void testTranserEnergyToShields() {
+		ship.transferEnergy(1000);
+		assertTrue(ship.getShields().getShieldEnergyLevel() == Shields.DEFAULT_SHIELD_LEVEL + 1000);
+	}
+	
+	
+	
+	@Test
+	public void testShipsShieldsGoodAtOutset() {
+		Shields shields = ship.getShields();
+		assertTrue(shields.getShieldEnergyLevel() == Shields.DEFAULT_SHIELD_LEVEL);
+	}
+	
 	@Test
 	public void testShipsEnergyIsDefaultAtOutset() {
-		assertTrue(ship.getEnergy().equals(40000));
+		assertTrue(ship.getEnergy() == (Ship.DEFAULT_SHIP_LEVEL));
 	}
 	
 	@Test
 	public void testGetSubsystemsReturnsSubsystemsNotZero() {
-		Ship ship = new Ship();
-		ArrayList<SubSystem> ss = ship.getSubsystems();
+		ArrayList<SubSystem> ss = ship.getShipsSubsytems();
 		assertTrue(ss.size() > 0);
 	}
 
