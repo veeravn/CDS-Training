@@ -66,7 +66,7 @@ public class Shields {
 	public int transferEnergy(int transEnergy) {
 		int allowedEnergy = MAX_SHIELD_LEVEL - shieldEnergyLevel;
 		int extraEnergy = 0;
-		if(allowedEnergy > transEnergy) {
+		if(allowedEnergy < transEnergy) {
 			shieldEnergyLevel += allowedEnergy;
 			extraEnergy = transEnergy - allowedEnergy;
 		} else {
