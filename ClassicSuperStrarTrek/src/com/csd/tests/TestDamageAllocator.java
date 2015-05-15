@@ -1,10 +1,10 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestDamageAllocator {
 
@@ -14,7 +14,7 @@ public class TestDamageAllocator {
 	
 	@Before
 	public void initializeTest() {
-		subsystems = new ArrayList<>();
+		subsystems = new ArrayList<SubSystem>();
 		subsystems.add(new SubSystem(SubSystem.subsystem_type.WARP_ENGINES));
 		subsystems.add(new SubSystem(SubSystem.subsystem_type.PHASERS));
 		subsystems.add(new SubSystem(SubSystem.subsystem_type.PHOTON_TORPEDOES));
