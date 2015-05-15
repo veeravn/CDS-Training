@@ -91,5 +91,25 @@ public class TestShields {
 		int returnedEnergy = shields.hit(hitEnergy);
 		assertEquals(hitEnergy, returnedEnergy);
 	}
+	@Test
+	public void testTransferEnergyIncrease() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		shields.transferEnergy(2500);
+		assertEquals(curEnergy+2500, shields.getShieldEnergyLevel());
+	}
 	
+	@Test
+	public void transferTooMuchEnergy() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		int transEnergy = Shields.MAX_SHIELD_LEVEL - curEnergy;
+		int extra = shields.transferEnergy(transEnergy + 1);
+		assertEquals(1, extra);
+	}
+	@Test
+	public void transferJustEnoughEnergy() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		int transEnergy = Shields.MAX_SHIELD_LEVEL - curEnergy;
+		int extra = shields.transferEnergy(transEnergy);
+		assertEquals(1, extra);
+	}
 }

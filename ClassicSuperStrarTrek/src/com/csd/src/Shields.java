@@ -59,4 +59,27 @@ public class Shields {
 		}
 		return energyNotAbsorbed;
 	}
+	/**
+	 * Transfer energy to and from the shields
+	 * @param transEnergy the amount of energy to transfer
+	 */
+	public int transferEnergy(int transEnergy) {
+		int allowedEnergy = MAX_SHIELD_LEVEL - shieldEnergyLevel;
+		int extraEnergy = 0;
+		if(allowedEnergy > transEnergy) {
+			shieldEnergyLevel += allowedEnergy;
+			extraEnergy = transEnergy - allowedEnergy;
+		} else {
+			shieldEnergyLevel += transEnergy;
+		}
+		
+		if(extraEnergy > 0) {
+			
+			System.out.println("You are transfering " + transEnergy + " units of energy, the shields only need " + allowedEnergy + 
+					" units of energy.");
+			System.out.println(extraEnergy + " units of energy is being returned to the ship.");
+		}
+		return extraEnergy;
+	}
+	
 }
