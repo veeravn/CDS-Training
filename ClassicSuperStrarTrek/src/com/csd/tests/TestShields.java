@@ -55,19 +55,32 @@ public class TestShields {
 	
 	@Test 
 	public void testIncreaseShieldEnergyLevelBeyondMax() {
-		final int energyLevelDelta = 5001;
+		final int energyLevelDelta = Shields.MAX_SHIELD_LEVEL - Shields.DEFAULT_SHIELD_LEVEL + 1;
 		shields.changeShieldEnergyLevelBy(energyLevelDelta);
-		assertEquals(shields.getShieldEnergyLevel(), Shields.MAX_SHIELD_LEVEL);
+		assertEquals(Shields.MAX_SHIELD_LEVEL, shields.getShieldEnergyLevel());
+	}
+	
+	@Test 
+	public void verifyEnergyReturnedWhenIncreaseShieldEnergyLevelBeyondMax() {
+		final int energyLevelDelta = Shields.MAX_SHIELD_LEVEL - Shields.DEFAULT_SHIELD_LEVEL + 1;
+		int energyReturned = shields.changeShieldEnergyLevelBy(energyLevelDelta);
+		assertEquals(1, energyReturned);
 	}
 	
 	@Test 
 	public void testDecreaseShieldEnergyLevelBeyondMin() {
-		assertEquals(shields.getShieldEnergyLevel(), Shields.DEFAULT_SHIELD_LEVEL);
-		final int energyLevelDelta = -5002;
+		final int energyLevelDelta = - (Shields.DEFAULT_SHIELD_LEVEL + 1);
 		shields.changeShieldEnergyLevelBy(energyLevelDelta);
-		assertEquals(shields.getShieldEnergyLevel(), Shields.MIN_SHIELD_LEVEL);
+		assertEquals(Shields.MIN_SHIELD_LEVEL, shields.getShieldEnergyLevel());
 	}
-	
+
+	@Test 
+	public void verifyEnergyReturnedWhenDecreaseShieldEnergyLevelBeyondMin() {
+		final int energyLevelDelta = - (Shields.DEFAULT_SHIELD_LEVEL + 1);
+		int energyReturned = shields.changeShieldEnergyLevelBy(energyLevelDelta);
+		assertEquals(-1, energyReturned);
+	}
+
 	@Test
 	public void shieldBuckleWhenEnergyAtZero() {
 		int curEnergy = shields.getShieldEnergyLevel();

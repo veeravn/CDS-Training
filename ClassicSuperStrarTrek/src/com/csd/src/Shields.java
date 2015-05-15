@@ -27,20 +27,25 @@ public class Shields {
 		return shieldEnergyLevel;
 	}
 	
-	// positive values increase shield levels, negative values reduce them
-	public void changeShieldEnergyLevelBy(int energyUnitDelta) {
-		
+	/**  positive values increase shield levels, negative values reduce them
+	 *  Returns any excess energy that could not be applied to the shields
+	 * @param energyUnitDelta
+	 * @return
+	 */
+	public int changeShieldEnergyLevelBy(int energyUnitDelta) {
 		shieldEnergyLevel = shieldEnergyLevel + energyUnitDelta;
+		int excessEnergy = 0;
 		
 		if (shieldEnergyLevel < MIN_SHIELD_LEVEL) {
+			excessEnergy = shieldEnergyLevel + MIN_SHIELD_LEVEL;
 			shieldEnergyLevel = MIN_SHIELD_LEVEL;
-			return;
-		}
-		
-		if (shieldEnergyLevel > MAX_SHIELD_LEVEL) {
+			
+		} else if (shieldEnergyLevel > MAX_SHIELD_LEVEL) {
+			excessEnergy = shieldEnergyLevel - MAX_SHIELD_LEVEL;
 			shieldEnergyLevel = MAX_SHIELD_LEVEL;
-			return;
 		}
+		return excessEnergy;
+
 	}
 	/**
 	 * Calculate the amount of energy that is absorbed and the amount left over.
