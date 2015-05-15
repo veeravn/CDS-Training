@@ -57,8 +57,9 @@ public class Shields {
 		if(isRaised() == false) {
 			energyNotAbsorbed = hitEnergy;
 		} else {
-			if(shieldEnergyLevel < hitEnergy) {
+			if(shieldEnergyLevel <= hitEnergy) {
 				energyNotAbsorbed = hitEnergy - shieldEnergyLevel;
+				dropShields();
 			}
 			changeShieldEnergyLevelBy(-hitEnergy);
 		}

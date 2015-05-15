@@ -84,6 +84,7 @@ public class TestShields {
 	@Test
 	public void shieldBuckleWhenEnergyAtZero() {
 		int curEnergy = shields.getShieldEnergyLevel();
+		shields.raiseShields();
 		shields.hit(curEnergy);	
 		assertFalse(shields.isRaised());
 	}
