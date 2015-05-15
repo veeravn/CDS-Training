@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Ship {
@@ -9,9 +10,16 @@ public class Ship {
 	private int shipEnergyLevel = DEFAULT_SHIP_LEVEL;
 	private Shields shields = new Shields();
 
-	
+    public static HashMap<SubSystemType, Integer> stardateDamage = new HashMap<SubSystemType, Integer>();
+    static  {
+        stardateDamage.put(SubSystemType.SHIELDS, 500);
+        stardateDamage.put(SubSystemType.PHASERS, 300);
+        stardateDamage.put(SubSystemType.WARP_ENGINES, 200);
+        stardateDamage.put(SubSystemType.PHOTON_TORPEDOES, 500);
+    }
+
 	public Ship() {
-		SubSystem ss = new SubSystem(SubSystem.subsystem_type.WARP_ENGINES);
+		SubSystem ss = new SubSystem(SubSystemType.WARP_ENGINES);
 		shipsSubsytems.add(ss);
 	}
 

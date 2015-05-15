@@ -14,7 +14,7 @@ public class TestSubsystemStatus {
 
     @Before
     public void setup() {
-        subsystem = new SubSystem(SubSystem.subsystem_type.SHIELDS);
+        subsystem = new SubSystem(SubSystemType.SHIELDS);
     }
 
     @Test
@@ -25,22 +25,17 @@ public class TestSubsystemStatus {
 
     @Test
     public void checkApplyDamage() {
-        subsystem.applyDamage(50);
+        subsystem.applyDamage(500);
         assertTrue(subsystem.isDamaged());
     }
 
     @Test
     public void checkSubsystemType() {
-        assertEquals(SubSystem.subsystem_type.SHIELDS, subsystem.getType());
-    }
-
-    @Test
-    public void checkTypeList() {
-        assertTrue(subsystem.one_tenth_stardateDamage.size() > 0);
+        assertEquals(SubSystemType.SHIELDS, subsystem.getType());
     }
 
     @Test
     public void checkDamageCalculation() {
-        assertEquals(.1, subsystem.damageCalculation(59));
+        assertEquals(0, subsystem.damageCalculation(59));
     }
 }
