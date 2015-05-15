@@ -113,17 +113,45 @@ public class TestShields {
 	}
 	
 	@Test
-	public void transferTooMuchEnergy() {
+	public void transferEnergyIncreaseTooMuch() {
 		int curEnergy = shields.getShieldEnergyLevel();
 		int transEnergy = Shields.MAX_SHIELD_LEVEL - curEnergy;
 		int extra = shields.transferEnergy(transEnergy + 1);
 		assertEquals(1, extra);
 	}
 	@Test
-	public void transferJustEnoughEnergy() {
+	public void transferEnergyIncreaseToMaxAllowed() {
 		int curEnergy = shields.getShieldEnergyLevel();
 		int transEnergy = Shields.MAX_SHIELD_LEVEL - curEnergy;
 		int extra = shields.transferEnergy(transEnergy);
 		assertEquals(0, extra);
+	}
+	@Test
+	public void testTransferEnergyDecrease() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		shields.transferEnergy(-2500);
+		assertEquals(curEnergy-2500, shields.getShieldEnergyLevel());
+	}
+	@Test
+	public void transferEnergyDecreaseTooMuch() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		int transEnergy = curEnergy + 1;
+		int extra = shields.transferEnergy(-transEnergy);
+		assertEquals(-1, extra);
+	}
+	@Test
+	public void transferEnergyDecreaseToMinAllowed() {
+		int curEnergy = shields.getShieldEnergyLevel();
+		int transEnergy = curEnergy;
+		int extra = shields.transferEnergy(-transEnergy);
+		assertEquals(0, extra);
+	}
+	@Test
+	public void shieldsDroppedWhenEnergyReducedToMin() {
+		shields.raiseShields();
+		int curEnergy = shields.getShieldEnergyLevel();
+		int transEnergy = curEnergy;
+		shields.transferEnergy(-transEnergy);
+		assertFalse(shields.isRaised());
 	}
 }
