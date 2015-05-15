@@ -31,20 +31,25 @@ public class Shields {
 		return shieldEnergyLevel;
 	}
 	
-	// positive values increase shield levels, negative values reduce them
-	public void changeShieldEnergyLevelBy(int energyUnitDelta) {
-		
+	/**  positive values increase shield levels, negative values reduce them
+	 *  Returns any excess energy that could not be applied to the shields
+	 * @param energyUnitDelta
+	 * @return
+	 */
+	public int changeShieldEnergyLevelBy(int energyUnitDelta) {
 		shieldEnergyLevel = shieldEnergyLevel + energyUnitDelta;
+		int excessEnergy = 0;
 		
-		if (shieldEnergyLevel < MIN_SHIELD_LEVEL) {
+		if (shieldEnergyLevel <= MIN_SHIELD_LEVEL) {
+			excessEnergy = shieldEnergyLevel + MIN_SHIELD_LEVEL;
 			shieldEnergyLevel = MIN_SHIELD_LEVEL;
-			return;
-		}
-		
-		if (shieldEnergyLevel > MAX_SHIELD_LEVEL) {
+			dropShields();
+		} else if (shieldEnergyLevel > MAX_SHIELD_LEVEL) {
+			excessEnergy = shieldEnergyLevel - MAX_SHIELD_LEVEL;
 			shieldEnergyLevel = MAX_SHIELD_LEVEL;
-			return;
 		}
+		return excessEnergy;
+
 	}
 	/**
 	 * Calculate the amount of energy that is absorbed and the amount left over.
@@ -56,10 +61,9 @@ public class Shields {
 		if(isRaised() == false) {
 			energyNotAbsorbed = hitEnergy;
 		} else {
-			if(shieldEnergyLevel < hitEnergy) {
-				energyNotAbsorbed = hitEnergy - shieldEnergyLevel;
-			}
-			changeShieldEnergyLevelBy(-hitEnergy);
+			energyNotAbsorbed = changeShieldEnergyLevelBy(-hitEnergy);
+			// Since callers only deal in positive energy amounts, this needs to be negated prior to returning
+			energyNotAbsorbed = -energyNotAbsorbed;
 		}
 		return energyNotAbsorbed;
 	}
@@ -68,22 +72,14 @@ public class Shields {
 	 * @param transEnergy the amount of energy to transfer
 	 */
 	public int transferEnergy(int transEnergy) {
-		int allowedEnergy = MAX_SHIELD_LEVEL - shieldEnergyLevel;
-		int extraEnergy = 0;
-		if(allowedEnergy < transEnergy) {
-			shieldEnergyLevel += allowedEnergy;
-			extraEnergy = transEnergy - allowedEnergy;
-		} else {
-			shieldEnergyLevel += transEnergy;
+
+		int energyNotUsed = 0;
+		energyNotUsed = changeShieldEnergyLevelBy(transEnergy);
+		if(energyNotUsed > 0) {
+			System.out.println("Shields at full, " + energyNotUsed + " not used, and being returned to the ship.");
 		}
-		
-		if(extraEnergy > 0) {
-			
-			System.out.println("You are transfering " + transEnergy + " units of energy, the shields only need " + allowedEnergy + 
-					" units of energy.");
-			System.out.println(extraEnergy + " units of energy is being returned to the ship.");
-		}
-		return extraEnergy;
+
+		return energyNotUsed;
 	}
 	
 }
