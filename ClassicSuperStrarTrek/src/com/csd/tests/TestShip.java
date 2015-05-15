@@ -15,6 +15,12 @@ public class TestShip {
 		ship = new Ship();
 	}
 
+	@Test
+	public void testTranserEnergyFromShip() {
+		ship.transferEnergy(1000);
+		assertTrue(ship.getEnergy() == Ship.DEFAULT_SHIP_LEVEL - 1000);
+	}
+	
 	
 	@Test
 	public void testTranserEnergyToShields() {

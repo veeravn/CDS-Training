@@ -11,12 +11,13 @@ public class Ship {
 
 	
 	public Ship() {
-		SubSystem ss = new SubSystem();
+		SubSystem ss = new SubSystem(SubSystem.subsystem_type.WARP_ENGINES);
 		shipsSubsytems.add(ss);
 	}
 
 	public void transferEnergy(int energyLevel) {
-		getShields().changeShieldEnergyLevelBy(energyLevel);		
+		getShields().changeShieldEnergyLevelBy(energyLevel);
+		shipEnergyLevel = shipEnergyLevel - energyLevel;
 	}
 
 	public ArrayList<SubSystem> getShipsSubsytems() {
