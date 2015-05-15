@@ -110,6 +110,6 @@ public class TestShields {
 		int curEnergy = shields.getShieldEnergyLevel();
 		int transEnergy = Shields.MAX_SHIELD_LEVEL - curEnergy;
 		int extra = shields.transferEnergy(transEnergy);
-		assertEquals(1, extra);
+		assertEquals(0, extra);
 	}
 }
