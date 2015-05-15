@@ -20,4 +20,8 @@ public class Phaser {
 		}
 	}
 
+	public int fire(int numberTargets) {
+		return phaserEnergy / numberTargets;
+	}
+
 }

@@ -14,6 +14,15 @@ public class TestPhasers {
 		phaser = new Phaser();
 	}
 
+	@Test
+	public void testFire() {
+		
+		phaser.charge(300);
+		int perTargetPhaserEnergy = phaser.fire(3);
+
+		assertEquals(100, perTargetPhaserEnergy);
+	}
+	
 	
 	@Test
 	public void testChargeOverflow() {
