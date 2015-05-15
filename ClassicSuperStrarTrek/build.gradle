@@ -27,5 +27,9 @@ dependencies {
 repositories {
     mavenCentral()
 }
+jar {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	from 'build/classes/main'
+}
 
 
