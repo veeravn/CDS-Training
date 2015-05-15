@@ -26,4 +26,8 @@ public class SubSystem {
     public int damageCalculation(int damage) {
         return Math.round(damage / Ship.stardateDamage.get(type));
     }
+
+    public SubSystem() {
+
+    }
 }
