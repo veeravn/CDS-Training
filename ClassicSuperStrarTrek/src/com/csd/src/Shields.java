@@ -14,8 +14,12 @@ public class Shields {
 		return raised;
 	}
 	
-	public void raiseShields() {
-		raised = true;
+	public void raiseShields(SubSystem shieldSubSystem) {
+        if (shieldSubSystem.isDamaged()) {
+            raised = false;
+        } else {
+            raised = true;
+        }
 	}
 	
 	public void dropShields() {

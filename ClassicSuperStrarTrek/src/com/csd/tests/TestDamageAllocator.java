@@ -11,14 +11,17 @@ public class TestDamageAllocator {
 	private DamageAllocator damageAllocator;
 	private ArrayList<SubSystem> subsystems;
 	private Shields shields;
-	
+	private SubSystem shieldSubSystem;
 	@Before
 	public void initializeTest() {
 		subsystems = new ArrayList<SubSystem>();
-		subsystems.add(new SubSystem(SubSystem.subsystem_type.WARP_ENGINES));
-		subsystems.add(new SubSystem(SubSystem.subsystem_type.PHASERS));
-		subsystems.add(new SubSystem(SubSystem.subsystem_type.PHOTON_TORPEDOES));
-		
+		subsystems.add(new SubSystem(SubSystemType.WARP_ENGINES));
+		subsystems.add(new SubSystem(SubSystemType.PHASERS));
+		subsystems.add(new SubSystem(SubSystemType.PHOTON_TORPEDOES));
+
+        shieldSubSystem = new SubSystem(SubSystemType.SHIELDS);
+        subsystems.add(shieldSubSystem);
+
 		shields = new Shields();
 		damageAllocator = new DamageAllocator();
 	}
@@ -26,7 +29,7 @@ public class TestDamageAllocator {
 	@Test
 	public void testTakeHitWithShieldsHolding() {
 		int hitEnergy = Shields.DEFAULT_SHIELD_LEVEL;
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		damageAllocator.takeHit(subsystems, shields, hitEnergy);
 		for (SubSystem subsystem : subsystems) {
 			assertTrue(!subsystem.isDamaged());
@@ -38,7 +41,7 @@ public class TestDamageAllocator {
 	// of the selection of the subsystem damage.
 	public void testTakeHitWithShieldsBuckling() {
 		int hitEnergy = Shields.DEFAULT_SHIELD_LEVEL + 1;
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		damageAllocator.takeHit(subsystems, shields, hitEnergy);
 		int countOfDamagedSubsystems = 0;
 		for (SubSystem subsystem : subsystems) {

@@ -1,18 +1,18 @@
 
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class TestShields {
 	Shields shields;
-	
+    private SubSystem shieldSubSystem;
+
 	@Before
 	public void init(){
 		shields = new Shields();
+        shieldSubSystem = new SubSystem(SubSystemType.SHIELDS);
 	}
 	
 	@Test
@@ -33,7 +33,7 @@ public class TestShields {
 	
 	@Test
 	public void testRaiseShields() {
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		assertTrue(shields.isRaised());
 	}
 	
@@ -79,7 +79,7 @@ public class TestShields {
 	public void shieldHitWithMoreEnergyThenItCanHandle() {
 		final int damageBeyondShieldEnergy = 100;
 		int curEnergy = shields.getShieldEnergyLevel();
-		shields.raiseShields();
+		shields.raiseShields(shieldSubSystem);
 		int energyNotAbsorbed = shields.hit(curEnergy + damageBeyondShieldEnergy); 
 		assertEquals(damageBeyondShieldEnergy, energyNotAbsorbed);
 	}

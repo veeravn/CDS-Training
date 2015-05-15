@@ -14,7 +14,7 @@ public class TestSubsystemStatus {
 
     @Before
     public void setup() {
-        subsystem = new SubSystem(SubSystem.subsystem_type.SHIELDS);
+        subsystem = new SubSystem(SubSystemType.SHIELDS);
     }
 
     @Test
@@ -31,12 +31,7 @@ public class TestSubsystemStatus {
 
     @Test
     public void checkSubsystemType() {
-        assertEquals(SubSystem.subsystem_type.SHIELDS, subsystem.getType());
-    }
-
-    @Test
-    public void checkTypeList() {
-        assertTrue(subsystem.stardateDamage.size() > 0);
+        assertEquals(SubSystemType.SHIELDS, subsystem.getType());
     }
 
     @Test

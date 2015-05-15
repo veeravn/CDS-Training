@@ -1,9 +1,9 @@
-import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 
-import org.junit.Before;
-import org.junit.Test;
+import static junit.framework.Assert.assertTrue;
 
 
 public class TestShip {
@@ -27,9 +27,7 @@ public class TestShip {
 		ship.transferEnergy(1000);
 		assertTrue(ship.getShields().getShieldEnergyLevel() == Shields.DEFAULT_SHIELD_LEVEL + 1000);
 	}
-	
-	
-	
+
 	@Test
 	public void testShipsShieldsGoodAtOutset() {
 		Shields shields = ship.getShields();
@@ -46,5 +44,10 @@ public class TestShip {
 		ArrayList<SubSystem> ss = ship.getShipsSubsytems();
 		assertTrue(ss.size() > 0);
 	}
+
+    @Test
+    public void checkTypeList() {
+        assertTrue(Ship.stardateDamage.size() > 0);
+    }
 
 }
